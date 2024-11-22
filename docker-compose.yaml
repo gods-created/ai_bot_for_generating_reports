@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  python:
+    build: ./
+    restart: always
+    volumes:
+      - ./app/databases:/app/databases
+    ports:
+      - 8001:8001

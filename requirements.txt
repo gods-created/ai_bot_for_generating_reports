@@ -1,0 +1,14 @@
+aiogram
+asyncio
+loguru
+openai
+pandas
+python-dotenv
+SQLAlchemy
+alembic
+fastapi
+uvicorn
+pydantic[email]
+jinja2
+starlette
+py_csv_xls

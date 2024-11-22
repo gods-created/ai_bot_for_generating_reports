@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', path='/css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='/css/app.css') }}" rel="stylesheet">
+    <title>Зміна користувацьких даних</title>
+</head>
+<body class="d-flex align-items-center py-4 bg-body-tertiary" url="{{ url }}" user_id="{{ user_id }}">
+  <main class="form-signin w-100 m-auto">
+      <div class="container d-flex justify-content-center px-3">
+          <form class="p-4 shadow-sm bg-white rounded" style="width: 100%; max-width: 400px;">
+              <!-- Email input -->
+              <div class="form-outline mb-3">
+                  <label class="form-label" for="email">Пошта:</label>
+                  <input type="email" id="email" class="form-control" placeholder="example@gmail.com" />
+              </div>
+
+              <!-- Report resource input -->
+              <div class="form-outline mb-3">
+                  <label class="form-label" for="report_resource">Джерело для отримання звіту:</label>
+                  <input type="text" id="report_resource" class="form-control" placeholder="https://example.com" />
+              </div>
+
+              <!-- Submit button -->
+              <div class="d-flex align-items-center justify-content-center">
+                  <button type="submit" class="btn btn-primary btn-sm save">Зберегти</button>
+              </div>
+          </form>
+      </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.12.0/validator.min.js" integrity="sha512-cAPfLsKbargeKjN/NYR9ZSEdkF+MBAcxNqdALGHTJn6u0Pnf4lucJExyaw3eHy44jRPp9pIRhHbL5N4jQBeI9w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="{{ url_for('static', path='/js/jquery.js') }}"></script>
+  <script src="{{ url_for('static', path='/js/app.js') }}" type="module"></script>
+</body>
+</html>
